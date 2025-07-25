@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/simple-mern');
+mongoose.connect(Process.env.MONGO_URL);
 
 module.exports = mongoose;
